@@ -1,5 +1,5 @@
 
-   /* ===Main styles for Homepage=== */
+/* ===Main styles for Homepage=== */
 
 @import url(styles/colors.css);
 @import url(styles/reset.css);
@@ -7,3 +7,5 @@
 @import url(styles/mediaQueries.css);
 @import url(styles/size.css);
 @import url(styles/header.css);
+@import url(styles/rating.css);
+@import url(styles/sideMenu.css);

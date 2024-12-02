@@ -1,0 +1,53 @@
+
+/* ==side menu== */
+
+.menu-wrapper{
+    transition: all 300ms ease-out;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: -100%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.side-menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0%;
+    left: 0%;
+    z-index: 99;
+   height: 100%;
+   width: 60%;
+   position: absolute;
+   background-color: var(--col-primary-normal);
+}
+.shade{
+    opacity: 0;
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    width: 40%;
+    background-color: rgba(59, 56, 56, 0.185);
+}
+.cross{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    padding-right: 10px;
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.items a{
+    color: white;
+}

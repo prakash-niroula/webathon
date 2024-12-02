@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home | Wellness</title>
+  <title>Home | FITSENSEI</title>
   <link rel="stylesheet" href="index.css">
   <script src="scripts/slider.js" defer></script>
   <script src="scripts/disableHoverMobile.js" defer></script>
@@ -20,12 +20,33 @@
           <a href="#">FITSENSEI</a>
         </h1>
         <nav>
-          <a href="#"><button>Log in</button></a>
-          <a href="#" class="icon hide-in-desktop"><img src="icons/global/menu.svg" width="34" height="34"></a>
+          <a href="#"><button>Join</button></a>
+          <span><img src="icons/dark-mode.svg" alt="darkMode"></span>
+          <span class="icon hide-in-desktop show-menu"><img alt="mobileMenu" src="icons/global/menu.svg" width="34" height="34"></span>
         </nav>
       </div>
     </header>
 
+  <!-- side navigation for mobile -->
+  <div class="menu-wrapper">
+    <aside class="side-menu hide-in-desktop">
+      <div class="cross hide-menu">X</div>
+      
+      <div class="items">
+        <a href="#">Services</a>
+        <a href="#">Why us</a>
+        <a href="#">Blog</a>
+        <a href="#">Pricing</a>
+        <a href="#">About us</a>    
+      </div>
+    </aside>
+
+    <div class="shade">
+      
+    </div>
+    
+        
+  </div>
 
     <!-- Contents -->
     <article>
@@ -35,12 +56,38 @@
         
       </section>
 
+      <section class="reviews hasSlider">
+        <div class="text-2xl">What others say :</div>
+        <div class="wrapper slider">
+          <div class="ratingBlock">
+            <div class="rating" style="--rating: 4.5;">
+              <div class="filled">
+                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+              </div>
+              <div class="empty">
+                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+              </div>
+            </div>
+            <span class="boughtNumber">(12)</span>
+          </div>
+        </div>
+      </section>
+
     </article>
 
     <!-- Footer section -->
     <footer>
 
     </footer>
+    <script src="scripts/menu.js"></script>
   </main>
 </body>
 </html>
