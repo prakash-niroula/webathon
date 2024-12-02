@@ -7,12 +7,14 @@
     .hide-in-mobile => hides that in mobile       
 */
 
+    /* Hides in desktop */
 @media screen and (min-width: 900px) {
   .hide-in-desktop {
     display: none !important;
   }
 }
 
+     /* Hides in mobile */
 @media screen and (max-width: 900px) {
   .hide-in-mobile {
     display: none !important;

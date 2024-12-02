@@ -1,17 +1,13 @@
 /* 
-  ====== Header.css ======
+ ====== Header.css ======
   Contains collection of styles to apply it in everything inside `header`
-    Navbar, buttons, logo, ...
-*/
-
-
-/* 
-  ====== Variables ======
+  Navbar, buttons, logo, ...
 */
 
 header {
 
-  /* Header properties */
+  /* Header properties variables */
+
   --width: 100%;
   
   --padding-x: clamp(0.75rem, -0.9rem + 6vw, 4.5rem);
@@ -19,7 +15,7 @@ header {
 
   --col-gap: 1rem;
   
-  /* Searchbar */
+  /* Searchbar variables */
   --search-width: min(100%, 760px);
   --search-height: clamp(1.75rem, 0.65rem + 4vw, 4.25rem);
   --search-height-mobile: clamp(2.625rem, 1.91rem + 2.6vw, 4.25rem);
@@ -32,7 +28,7 @@ header {
 
   --search-input: 1rem 0;
 
-  /* Navbar and buttons */
+  /* Navbar and buttons variables*/
   --button-padding: clamp(0.5rem, 0.413rem + 0.4348vw, 0.75rem) clamp(1rem, 0.45rem + 2vw, 2.25rem);
   --button-text-size: clamp(1rem, 0.89rem + 0.4vw, 1.25rem);
 }
