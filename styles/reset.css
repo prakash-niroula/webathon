@@ -1,5 +1,6 @@
 /* 
   ====== Reset.css ======
+  Removes the default properties of website
   Prepares a css reset for easy workflow.
 
   Performs things like :
@@ -15,6 +16,7 @@
   scroll-behavior: smooth;
 }
 
+    /* Button styling */
 button {
   outline: none;
   border: none;
@@ -30,6 +32,7 @@ button:focus-visible {
   outline: 2px solid var(--col-primary-dark);
 }
 
+  /* Anchor visited  */
 a, a:visited {
   color: inherit;
   font-size: inherit;

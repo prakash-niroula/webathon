@@ -1,7 +1,9 @@
+
+/* ===Main styles for Homepage=== */
+
 @import url(styles/colors.css);
 @import url(styles/reset.css);
 @import url(styles/typography.css);
 @import url(styles/mediaQueries.css);
 @import url(styles/size.css);
 @import url(styles/header.css);
-
