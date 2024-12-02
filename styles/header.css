@@ -23,6 +23,7 @@ header {
   --button-height: clamp(2.5rem, 1.95rem + 2vw, 3.75rem);
   --button-padding: clamp(2.125rem, 1.575rem + 2vw, 3.375rem);
   --button-text-size: clamp(1rem, 0.89rem + 0.4vw, 1.25rem);
+  --button-margin: clamp(0.75rem, 0.53rem + 0.8vw, 1.25rem);
 
   --nav-col-gap: clamp(1rem, 0.67rem + 1.2vw, 1.75rem);
 

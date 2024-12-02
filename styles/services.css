@@ -1,9 +1,10 @@
 
 .serviceGrid {
-  --width: 310px;
-  --height: 360px;
+  --width: clamp(25.5rem, 25.28rem + 0.8vw, 26rem);
 
-  --col-gap: 28px;
+  --padding-bottom: clamp(0.75rem, 0.53rem + 0.8vw, 1.25rem);
+
+  --col-gap: clamp(0.625rem, 0.13rem + 1.8vw, 1.75rem);
 
   --text-padding: 20px;
 
@@ -22,17 +23,17 @@
 .serviceGrid {
   display: grid;
   width: 100%;
-  grid-template-columns: repeat(auto-fit, var(--width));
-  column-gap: var(--col-gap);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  /* column-gap: var(--col-gap); */
   row-gap: var(--col-gap);
 }
 
 .service {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: var(--height);
+  width: calc(100% - var(--col-gap));
   padding: 0 var(--padding-left);
+  padding-bottom: var(--padding-bottom);
   border: 2px solid var(--col-grey-light);
   
   padding-top: var(--padding-top);
@@ -61,13 +62,22 @@
 .service .button {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
 }
 
 .service .button button {
   height: var(--btn-height);
   padding: var(--btn-padding);
-  background: var(--col-primary-normal);
+  border: 1.5px solid var(--col-primary-normal);
   border-radius: var(--border-radius-round);
-  color: var(--col-text-white);
+  color: var(--col-text-normal);
+}
+
+@media screen and ( max-width: 900px ) {
+  .serviceGrid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .service .button {
+    justify-content: flex-end;
+  }
 }
