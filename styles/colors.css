@@ -1,0 +1,14 @@
+/* 
+  ====== Colors.css ======
+  Colors used in the website
+*/
+
+html {
+
+  --col-text-main: #110707;
+
+  --col-primary-normal: #D8324A;
+  --col-primary-light: #FFE7E7;
+  --col-secondary-normal: #EBC088;
+
+}
