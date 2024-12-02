@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="index.css">
   <script src="scripts/slider.js" defer></script>
   <script src="scripts/disableHoverMobile.js" defer></script>
+  <script src="scripts/darkmode.js" defer></script>
 </head>
 <body>
 
@@ -17,12 +18,24 @@
     <header>
       <div class="header">
         <h1 class="logo">
-          <a href="#">FITSENSEI</a>
+          <a href="#">
+            <span>FIT</span>
+            <span class="main">SENSEI</span>
+          </a>
         </h1>
         <nav>
-          <a href="#"><button>Join</button></a>
-          <span><img src="icons/dark-mode.svg" alt="darkMode"></span>
-          <span class="icon hide-in-desktop"><img alt="mobileMenu" src="icons/global/menu.svg" width="34" height="34"></span>
+          <nav class="nav hide-in-mobile">
+            <a href="">Services</a>
+            <a href="">Why us</a>
+            <a href="">Blog</a>
+            <a href="">Price</a>
+            <a href="">About us</a>
+          </nav>
+          <nav>
+            <a href="#"><button>Join</button></a>
+            <span><img id="toggle-dark-mode" src="icons/dark-mode.svg" alt="darkMode"></span>
+            <span class="icon hide-in-desktop"><img alt="mobileMenu" src="icons/global/menu.svg" width="34" height="34"></span>
+          </nav>
         </nav>
       </div>
     </header>
@@ -33,30 +46,91 @@
           
       <!-- Top banner -->
       <section class="top banner">
-        
+        <img class="hide-in-mobile" src="images/banner/desktop.png" width="1024" height="654" alt="banner">
+        <img class="hide-in-desktop" src="images/banner/mobile.png" width="258" height="252" alt="banner">
+        <div class="content">
+          <p class="subtitle">IF YOU BELIEVE,</p>
+          <p class="title">YOU CAN</p>
+          <button class="highlight">Join now</button>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="title">
+          <p>Our Services</p>
+        </div>
+        <div class="serviceGrid">
+          <div class="service">
+            <img src="icons/dumbell.svg" alt="" class="icon">
+            <p class="serviceName">Strength Training</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus repudiandae fugiat eveniet aspernatur nisi id fuga officia in at quos culpa, molestias doloremque et modi itaque dicta quisquam mollitia!</p>
+            <div class="button">
+              <button>Learn more</button>
+            </div>
+          </div>
+          <div class="service">
+            <img src="icons/dumbell.svg" alt="" class="icon">
+            <p class="serviceName">Strength Training</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus repudiandae fugiat eveniet aspernatur nisi id fuga officia in at quos culpa, molestias doloremque et modi itaque dicta quisquam mollitia!</p>
+            <div class="button">
+              <button>Learn more</button>
+            </div>
+          </div>
+          <div class="service">
+            <img src="icons/dumbell.svg" alt="" class="icon">
+            <p class="serviceName">Strength Training</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus repudiandae fugiat eveniet aspernatur nisi id fuga officia in at quos culpa, molestias doloremque et modi itaque dicta quisquam mollitia!</p>
+            <div class="button">
+              <button>Learn more</button>
+            </div>
+          </div>
+          <div class="service">
+            <img src="icons/dumbell.svg" alt="" class="icon">
+            <p class="serviceName">Strength Training</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus repudiandae fugiat eveniet aspernatur nisi id fuga officia in at quos culpa, molestias doloremque et modi itaque dicta quisquam mollitia!</p>
+            <div class="button">
+              <button>Learn more</button>
+            </div>
+          </div>
+          <div class="service">
+            <img src="icons/dumbell.svg" alt="" class="icon">
+            <p class="serviceName">Strength Training</p>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus repudiandae fugiat eveniet aspernatur nisi id fuga officia in at quos culpa, molestias doloremque et modi itaque dicta quisquam mollitia!</p>
+            <div class="button">
+              <button>Learn more</button>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="reviews hasSlider">
         <div class="text-2xl">What others say :</div>
         <div class="wrapper slider">
-          <div class="ratingBlock">
-            <div class="rating" style="--rating: 4.5;">
-              <div class="filled">
-                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+          <div class="review">
+            <div class="ratingBlock">
+              <div class="rating" style="--rating: 5;">
+                <div class="filled">
+                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
+                </div>
+                <div class="empty">
+                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
+                </div>
               </div>
-              <div class="empty">
-                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-              </div>
+              <span class="boughtNumber">(12)</span>
             </div>
-            <span class="boughtNumber">(12)</span>
+            <p class="text">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique alias nam sint,
+              ipsa reprehenderit sapiente eius recusandae corporis distinctio est quidem laborum inventore
+              delectus quos, velit cupiditate id ut! Aliquam.
+            </p>
           </div>
         </div>
       </section>

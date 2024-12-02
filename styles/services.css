@@ -1,0 +1,73 @@
+
+.serviceGrid {
+  --width: 310px;
+  --height: 360px;
+
+  --col-gap: 28px;
+
+  --text-padding: 20px;
+
+  --btn-height: 48px;
+  --btn-padding: 0 36px;
+
+  --icon-width: 70px;
+
+  --padding-top: 27px;
+  --padding-left: 16px;
+
+  --service-gap-1: 28px;
+  --service-gap-2: 12px;
+}
+
+.serviceGrid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, var(--width));
+  column-gap: var(--col-gap);
+  row-gap: var(--col-gap);
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: var(--height);
+  padding: 0 var(--padding-left);
+  border: 2px solid var(--col-grey-light);
+  
+  padding-top: var(--padding-top);
+  border-radius: 0.5rem;
+}
+
+.service .icon {
+  width: var(--icon-width);
+  height: auto;
+}
+
+.service .serviceName {
+  padding-top: var(--padding-top);
+  padding-bottom: var(--service-gap-2);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-semibold);
+}
+
+.service .text {
+  color: var(--col-grey-normal);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  padding-bottom: var(--text-padding);
+}
+
+.service .button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.service .button button {
+  height: var(--btn-height);
+  padding: var(--btn-padding);
+  background: var(--col-primary-normal);
+  border-radius: var(--border-radius-round);
+  color: var(--col-text-white);
+}

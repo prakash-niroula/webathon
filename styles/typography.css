@@ -126,3 +126,7 @@ html {
 .weight-black {
   font-weight: var(--weight-black);
 }
+
+* {
+  font-family: var(--font-primary);
+}
