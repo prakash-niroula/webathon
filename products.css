@@ -101,11 +101,7 @@
   justify-content: space-between;
 }
 
-.product .ratingBlock {
-  display: flex;
-  align-items: center;
-  column-gap: 0.1rem;
-}
+.product 
 
 .product .rating img {
   width: var(--rating-icon-size);

@@ -1,0 +1,30 @@
+.ratingBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 0.1rem;
+}
+
+.rating img {
+  width: var(--rating-icon-size);
+  height: var(--rating-icon-size);
+}
+
+.rating {
+  --rating: 4.5;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  width: min-content;
+}
+
+.rating > div {
+  display: flex;
+  column-gap: 0.1rem;
+}
+
+.rating .filled {
+  position: absolute;
+  /* width: calc(var(--rating) * 20% + 0.25rem); */
+  width: calc(var(--rating) * 20% + 0.05rem);
+  overflow: hidden;
+}
