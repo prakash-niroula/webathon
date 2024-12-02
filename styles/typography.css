@@ -8,21 +8,6 @@
     --font-<usecase> : for font families, where <usecase> is a unique use case name.
 
     --text-[?usecase]-<size> : for text sizes, where =>
-      <size> can be :
-        - 4xl : largest text (h1)
-        - 3xl : larger text (h2)
-        - 2xl : large text (h3)
-        - xl : bigger text (h4)
-        - lg : big text
-
-        - base : base text
-        
-        - sm : small text
-        - xs : smaller text
-        - 2xs : smallest text
-      
-      [?usecase] is optional and can be used if required
-        Example : text-mobile-lg, text-desktop-sm, text-card-2xl, text-title-xl, etc...
   
   Classes format :
     .font-<usecase>: change font family to --font-<usecase>
