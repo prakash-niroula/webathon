@@ -10,7 +10,9 @@ html {
   --col-secondary-normal: #EBC088;
   --col-grey-normal: #636363;
   --col-grey-light: #63636333;
+  --col-lightGrey-normal: #F1F1F1;
   --col-black-normal: #000;
+  --col-white-normal: #fff;
 
   /* Text colors */
   --col-text-normal: #110707;

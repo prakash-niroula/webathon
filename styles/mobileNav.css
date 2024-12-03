@@ -1,0 +1,73 @@
+.mobileNav {
+  --bg: rgba(0,0,0,.5);
+  --width: max(338px, 70%);
+
+  --padding-y: clamp(1.25rem, 0.975rem + 1vw, 1.875rem);
+  --links-height: min(100%, 148px);
+}
+
+.mobileNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--bg);
+  z-index: 10;
+  opacity: 1;
+  transition: 200ms ease-in-out all;
+}
+
+.mobileNav.close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.mobileNav > .main {
+  padding: var(--padding-y);
+  width: var(--width);
+  height: 100%;
+  padding: 16px;
+  font-weight: var(--weight-medium);
+  font-size: var(--text-lg);
+  background-color: var(--col-white-normal);
+  transform: translateX(0);
+  transition: inherit;
+}
+
+.mobileNav.close > .main {
+  transform: translateX(-100%);
+}
+
+
+.mobileNav .links {
+  display: grid;
+  padding-top: 20px;
+  height: var(--links-height);
+}
+
+.mobileNav .links a {
+  width: 100%;
+  padding: 20px 0;
+  border-bottom: 2px solid var(--col-grey-light);
+  font-weight: var(--weight-medium);
+}
+
+.mobileNav .links a.active {
+  color: var(--col-text-primary);
+}
+
+.mobileNav .logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mobileNav .icons {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.mobileNav .icons a {
+  padding: 5px;
+}

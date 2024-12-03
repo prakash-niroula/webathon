@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,14 @@
   <script src="scripts/slider.js" defer></script>
   <script src="scripts/disableHoverMobile.js" defer></script>
   <script src="scripts/darkmode.js" defer></script>
+  <script src="scripts/mobileNav.js" defer></script>
 </head>
+
 <body>
 
   <!-- Main -->
   <main class="font-primary text-base">
-    
+
     <!-- Heading : Logo, Searchbar, Navbar -->
     <header>
       <div class="header">
@@ -25,25 +28,47 @@
         </h1>
         <nav>
           <nav class="nav hide-in-mobile">
-            <a href="">Services</a>
+            <a href="#service">Services</a>
             <a href="">Why us</a>
             <a href="">Blog</a>
-            <a href="">Price</a>
-            <a href="">About us</a>
+            <a href="#pricing">Price</a>
+            <a href="#aboutus">About us</a>
           </nav>
           <nav>
             <a href="#"><button>Join</button></a>
-            <span><img id="toggle-dark-mode" src="icons/dark-mode.svg" alt="darkMode"></span>
-            <span class="icon hide-in-desktop"><img alt="mobileMenu" src="icons/global/menu.svg" width="34" height="34"></span>
+            <span class="hide-in-mobile hide-in-desktop"><img id="toggle-dark-mode" src="icons/dark-mode.svg" alt="darkMode"></span>
+            <span class="icon hide-in-desktop" id="mobileNavOpen"><img alt="mobileMenu" src="icons/global/menu.svg"
+                width="34" height="34"></span>
           </nav>
         </nav>
       </div>
     </header>
 
+    <div id="mobileNav" class="mobileNav hide-in-desktop close mobileNavClose closeBtn">
+      <div class="main">
+        <h1 class="logo">
+          <a href="">
+            <span>FIT</span>
+            <span class="main">SENSEI</span>
+          </a>
+          <div class="icons">
+            <a><img src="icons/dark-mode.svg" alt="darkMode" /></a>
+            <a class="mobileNavClose"><img class="closeBtn" src="icons/global/cross.svg" alt="cross" /></a>
+          </div>
+        </h1>
+        <div class="links">
+          <a href="#service" class="active">Services</a>
+          <a href="">Why us</a>
+          <a href="">Blog</a>
+          <a href="#pricing">Price</a>
+          <a href="#aboutus">About us</a>
+        </div>
+      </div>
+    </div>
 
     <!-- Contents -->
     <article>
-          
+
       <!-- Top banner -->
       <section class="top banner">
         <img class="hide-in-mobile" src="images/banner/desktop.png" width="1024" height="654" alt="banner">
@@ -55,7 +80,7 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section" id="service">
         <div class="title">
           <p>Our Services</p>
         </div>
@@ -63,23 +88,23 @@
           <div class="service">
             <img src="icons/dumbell.svg" alt="" class="icon">
             <p class="serviceName">Strength Training</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus repudiandae fugiat eveniet aspernatur nisi id fuga officia in at quos culpa, molestias doloremque et modi itaque dicta quisquam mollitia!</p>
+            <p class="text">Strength training involves making muscles contract against an outside resistance, such as your body weight, dumbbells, medicine balls, resistance bands, or weight machines. </p>
             <div class="button">
               <button>Learn more</button>
             </div>
           </div>
           <div class="service">
             <img src="icons/dumbell.svg" alt="" class="icon">
-            <p class="serviceName">Strength Training</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus repudiandae fugiat eveniet aspernatur nisi id fuga officia in at quos culpa, molestias doloremque et modi itaque dicta quisquam mollitia!</p>
+            <p class="serviceName">Yoga</p>
+            <p class="text">Strength training for stronger muscles and overall strength, Strength training for stronger muscles and overall strength, Strength training for stronger muscles and overall strength,Strength training for stronger muscles </p>
             <div class="button">
               <button>Learn more</button>
             </div>
           </div>
           <div class="service">
             <img src="icons/dumbell.svg" alt="" class="icon">
-            <p class="serviceName">Strength Training</p>
-            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam delectus repudiandae fugiat eveniet aspernatur nisi id fuga officia in at quos culpa, molestias doloremque et modi itaque dicta quisquam mollitia!</p>
+            <p class="serviceName">Weight Loss</p>
+            <p class="text">Strength training for stronger muscles and overall strength, Strength training for stronger muscles and overall strength, Strength training for stronger muscles and overall strength,Strength training for stronger muscles </p>
             <div class="button">
               <button>Learn more</button>
             </div>
@@ -87,45 +112,184 @@
         </div>
       </section>
 
-        <!-- Review section along with slider -->
-      <section class="reviews hasSlider">
-        <div class="text-2xl">What others say :</div>
-        <div class="wrapper slider">
-          <div class="review">
-            <div class="ratingBlock">
-              <div class="rating" style="--rating: 5;">
-                <div class="filled">
-                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                  <img src="icons/rating/filled.svg" width="16" height="16" alt="">
-                </div>
-                <div class="empty">
-                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                  <img src="icons/rating/empty.svg" width="16" height="16" alt="">
-                </div>
-              </div>
-              <span class="boughtNumber">(12)</span>
+      <section class="section" id="pricing">
+        <div class="title">
+          <p>Pricing</p>
+        </div>
+
+
+        <!-- products section or  grid -->
+        <div class="pricingGrid">
+          <!-- service cards -->
+          <div class="pricing">
+            <p class="title">Basic</p>
+            <div class="price">
+              <h1 class="pricing-dollor">$15</h1>
+              <p>/ per person</p>
             </div>
-            <p class="text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique alias nam sint,
-              ipsa reprehenderit sapiente eius recusandae corporis distinctio est quidem laborum inventore
-              delectus quos, velit cupiditate id ut! Aliquam.
-            </p>
+            <div class="">
+              <button>Choose Plan</button>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
           </div>
+
+
+          <div class="pricing">
+            <p class="title">Premium</p>
+            <div class="price">
+              <h1 class="pricing-dollor">$29</h1>
+              <p>/ per person</p>
+            </div>
+            <div class="button">
+              <button>Choose Plan</button>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+          </div>
+
+
+          <div class="pricing">
+            <p class="title">Professional</p>
+            <div class="price">
+              <h1 class="pricing-dollor">$59</h1>
+              <p>/ per person</p>
+            </div>
+            <div class="button">
+              <button>Choose Plan</button>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+            <div class="detail">
+              <img src="./icons/tick.svg" alt="" />
+              <p>6 classes per month</p>
+            </div>
+          </div>
+
+
         </div>
       </section>
+
+      <section class="hide-in-mobile ad" style="margin-top: 4rem; object-fit: cover; width: 100%; height: auto;">
+        <img src="images/add.png" alt="">
+      </section>
+      <section class="section">
+        <div class="title">
+          <p>About us</p>
+        </div>
+        <div class="about-content" style="display: grid; column-gap: 2rem;">
+          <div class="about-left">
+            <img src="./images/aboutus.png" alt="" />
+          </div>
+
+
+          <div class="about-right">
+            <span class="title text-2xl weight-semibold">Who are we?</span>
+            <p class="weight-regular">
+              Created by Team Fluid, fitSENSEI is a training platform
+              featuring both online and in-person programs designed to help
+              you achieve peak health while having fun. Our mission is to make
+              holistic fitness manageable and enjoyable — better health means
+              a better life for us and those around us. We offer programs
+              across posture and corrective exercises, strength training and
+              cardio, nutrition, and mobility. Think of us as a university of
+              feeling great!
+            </p>
+            <div class="about-button">
+              <button>Learn more</button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <footer class="footer">
+        
+        <div class="footer-left">
+          <h1>Get help for your body</h1>
+          <button>Get in touch</button>
+        </div>
+
+
+        <div class="footer-right">
+          <li>Services</li>
+          <li>Pricing</li>
+          <li>About us</li>
+        </div>
+      </footer>
 
     </article>
-
-    <!-- Footer section -->
-    <footer>
-
-    </footer>
   </main>
 </body>
+
 </html>

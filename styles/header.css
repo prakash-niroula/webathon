@@ -11,7 +11,7 @@ header {
   --width: 100%;
   
   --padding-x: clamp(0.75rem, -0.9rem + 6vw, 4.5rem);
-  --padding-y: 30px;
+  --padding-y: clamp(1.25rem, 0.975rem + 1vw, 1.875rem);
   /* --padding-y: clamp(0.3125rem, 0.0375rem + 1vw, 0.9375rem); */
 
   --col-gap: 1rem;
@@ -52,7 +52,7 @@ header {
 
 }
 
-.header .logo {
+.logo {
   font-size: var(--text-3xl);
   font-weight: var(--weight-medium);
   letter-spacing: calc(-0.04 * var(--text-3xl));
@@ -90,12 +90,12 @@ header .nav a:hover {
   font-weight: var(--weight-semibold);
 }
 
-.header .logo a {
+.logo a {
   display: flex;
   font-weight: var(--weight-light);
 }
 
-.header .logo .main {
+.logo .main {
   font-weight: var(--weight-bold);
   color: var(--col-primary-normal);
 }
